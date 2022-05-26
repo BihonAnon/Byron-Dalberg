@@ -52,6 +52,7 @@ nav{
 .sidepage{
     /* float: right; */
     /* width: 60%; */
+    display: flex;
     background-color: #FAF0D7;
     width: 100%;
     justify-content: center;
