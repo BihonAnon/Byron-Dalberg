@@ -1,0 +1,120 @@
+/* ------- Assignemnt Requirements ----------
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+*/
+/* ----- Main Pallet ----- 
+#F4BFBF - Light Pink
+#FFD9C0 - Light Orange
+#FAF0D7 - Beige
+#8CC0DE - Light Blue
+*/
+/*-------------Header Stuff-------------*/
+* { 
+    padding: 0; 
+    margin: 0;
+    color: #6e90a3;
+  }
+header{
+    background-color: #FAF0D7;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    flex: 0 1 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 1 50%;
+    padding-bottom: 40px;
+}
+/*-------------Body Stuff-------------*/
+body {
+    background-image: url('./images/edge-background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    background-position-x: -260px;
+}
+/*-------------Sidepage-------------*/
+.sidepage{
+    float: right;
+    width: 60%;
+    background-color: #FAF0D7;
+}
+/*-------------Website Development-----------*/
+img{
+    width: 100%;
+    height: auto;
+}
+#website-development {
+    background-color:#FFD9C0;
+}
+h1{
+    background-color: #8CC0DE;
+    justify-content: center;
+}
+.wd-focus-card {
+    padding: 3px;
+    padding-top: 10px;
+    background-color: #8CC0DE;
+}
+    .wd-focus-card img{
+        background-color:#8CC0DE;;
+    }
+.wd-focus-card h2{
+    background-color:#8CC0DE;
+    justify-content: center;
+    flex: none;
+}
+.wd-samples{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+    .wd-samples-card{
+        flex: 0 1 50%;
+        height: auto;
+        color: #8CC0DE;
+        background-color: #FFD9C0;
+        padding: 15px;
+    }
+/*-------------Music Production-------------*/
+#music-production {
+    background-color: #8CC0DE;
+}
+h1{
+    background-color:#8CC0DE;
+    color: #FFD9C0;
+    text-align:center;
+}
+.music-production .wd-samples{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+    .music-production .wd-samples-card{
+        flex: 0 1 50%;
+        height: auto;
+        color: #8CC0DE;
+        background-color: #8CC0DE;
+        padding: 15px;
+    }
