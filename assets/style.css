@@ -2,14 +2,19 @@
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+>>DONE
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
+>>DONE
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
+>>DONE
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
+>>DONE
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
+>>DONE
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 */
@@ -43,34 +48,30 @@ nav{
     flex: 0 1 50%;
     padding-bottom: 40px;
 }
-/*-------------Body Stuff-------------*/
-body {
-    background-image: url('./images/edge-background3.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-size: cover;
-    background-position-x: -260px;
-}
 /*-------------Sidepage-------------*/
 .sidepage{
-    float: right;
-    width: 60%;
+    /* float: right; */
+    /* width: 60%; */
     background-color: #FAF0D7;
+    width: 100%;
+    justify-content: center;
 }
+
 /*-------------Website Development-----------*/
 img{
     width: 100%;
     height: auto;
 }
-#website-development {
+.website-development {
     background-color:#FFD9C0;
 }
-h1{
+.website-development h1{
+    margin-top: 30px;
     background-color: #8CC0DE;
     justify-content: center;
 }
 .wd-focus-card {
+    width:100%;
     padding: 3px;
     padding-top: 10px;
     background-color: #8CC0DE;
@@ -87,20 +88,24 @@ h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
     .wd-samples-card{
-        flex: 0 1 50%;
+        width: 48%;
         height: auto;
         color: #8CC0DE;
         background-color: #FFD9C0;
         padding: 15px;
     }
 /*-------------Music Production-------------*/
-#music-production {
+.music-production {
     background-color: #8CC0DE;
 }
-h1{
+.music-production h1{
+    background-color:#8CC0DE;
+    color: #FFD9C0;
+    text-align:center;
+}
+.music-production h1{
     background-color:#8CC0DE;
     color: #FFD9C0;
     text-align:center;
@@ -109,10 +114,10 @@ h1{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
     .music-production .wd-samples-card{
-        flex: 0 1 50%;
+        /* flex: 0 1 50%; */
         height: auto;
         color: #8CC0DE;
         background-color: #8CC0DE;
